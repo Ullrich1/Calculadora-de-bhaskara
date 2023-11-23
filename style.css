@@ -1,0 +1,22 @@
+input {
+    width: 35px;
+}
+.painel {
+    border: 2px solid black;
+    background-color: white;
+    width: 500px;
+    height: 700px;
+}
+#formDelta {
+    border: 2px solid black;
+    width: fit-content;
+    padding: 15px;
+    margin: 35px;
+}
+
+#formBhask {
+    border: 2px solid black;
+    width: fit-content;
+    padding: 15px;
+    margin: 35px;
+}
