@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="./Style/style.css">
+    <script src="./Scripts/script.js"></script>
+</head>
+
+<body>
+    <main class="main">
+        <h1>calculadora de bhaskara</h1>
+        <div id="formDelta">
+            <h2>Delta</h2>
+            <p>Δ = b² – 4.a.c</p>
+        </div>
+        <div id="formBhask">
+            <h2>Bhaskara</h2>
+            <p>x = -b ± √Δ</p>
+        </div>
+        <!--inputs-->
+        <div class="painel-main">
+            Δ =
+            <input type="number" id="itemB">
+            ² - 4.
+            <input type="number" id="itemA"> .
+            <input type="number" id="itemC">
+            <button onclick="clique()">Calcular</button>
+
+            <div id="res-painel-main">
+                <p id="res">...</p>
+            </div>
+            
+        </div>
+
+    </main>
+</body>
+
+</html>

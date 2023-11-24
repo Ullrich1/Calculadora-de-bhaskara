@@ -1,9 +1,9 @@
 input {
     width: 35px;
 }
-.painel {
+.main {
     border: 2px solid black;
-    background-color: white;
+    background-color: palegreen;
     width: 500px;
     height: 700px;
 }
@@ -19,4 +19,14 @@ input {
     width: fit-content;
     padding: 15px;
     margin: 35px;
+}
+
+.painel-main {
+    margin: 25px;
+}
+
+#res-painel-main {
+    background-color: lightgoldenrodyellow;
+    width: 100px;
+    height: 15px;
 }
