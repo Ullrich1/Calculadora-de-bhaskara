@@ -1,32 +1,35 @@
-function respostaDelta() {
+
+function respostaBhask() {
   let A = document.getElementById("itemA").value;
   let B = document.getElementById("itemB").value;
   let C = document.getElementById("itemC").value;
 
   let delta = B * B - 4 * A * C; //Calculo do discriminante
 
-  document.getElementById("resDelta").innerHTML = delta;
+  document.getElementById("resDelta").innerHTML = delta; //resultado na janela delta
+
+  //calculo bhaskara dois resultados (final)
+  document.getElementById("b").innerHTML = B;
+  document.getElementById("a").innerHTML = A;
+
+  let x1 = -B + (Math.sqrt(delta) / 2) * A; //Calc da Bhaskara +
+  let x2 = -B - (Math.sqrt(delta) / 2) * A; //Calc da Bhaskara -
+
+  document.getElementById("resBhask1").innerHTML = x1; //resultado na janela bhaskara
+  document.getElementById("resBhask2").innerHTML = x2; //resultado na janela bhaskara
+
+  resBhask1.innerHTML = x1.toFixed(2); //arrendonda resultados decimais
+  resBhask2.innerHTML = x2.toFixed(2); //arrendonda resultados decimais
 }
 
-function limparDelta() {
+function limparPaineis() {
   document.getElementById("resDelta").innerHTML = "Resultado";
+  document.getElementById("resBhask1").innerHTML = "Resultado";
+  document.getElementById("resBhask2").innerHTML = "Resultado";
+  document.getElementById("a").innerHTML = "a";
+  document.getElementById("b").innerHTML = "b";
+
   itemA.value = " ";
   itemB.value = " ";
   itemC.value = " ";
 }
-
-
-
-function respostaBhask() {
-  let aBhask = document.getElementById("itemB-bhask").value;
-  let bBhask = document.getElementById("itemA-bhask").value;
-
-  let x1 = -bBhask + (Math.sqrt(delta) / 2) * aBhask; //Calc da Bhaskara +
-  let x2 = -bBhask - (Math.sqrt(delta) / 2) * aBhask; //Calc da Bhaskara -
-
-  document.getElementById("resBhask1").innerHTML = x1;
-  document.getElementById("resBhask2").innerHTML = x2;
-}
-
-//Por algum motivo o a resposta da bhaskara não é mostrada
-//resolver amanhã

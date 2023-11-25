@@ -9,7 +9,8 @@
   </head>
 
   <body>
-    <main class="main">
+    
+    <main class="main__Calculadora__Bhaskara">
       <h1>calculadora de bhaskara</h1>
       <div id="formulas">
         <div id="formDelta">
@@ -39,9 +40,6 @@
             <br />
             <br />
 
-            <button onclick="respostaDelta()">Calcular</button>
-            <button onclick="limparDelta()">Limpar</button>
-
             <div class="painel-resposta">
               <p id="texto-delta">O delta é =</p>
               <div id="res-painel-delta">
@@ -58,19 +56,18 @@
 
           <!--Painel bhaskara-->
           <div class="painel-bhaskara-box">
-            x = -
-            <input type="number" id="itemB-bhask" />
-            ± √Δ / 2 .
-            <input type="number" id="itemA-bhask" />
-
-            <br />
-            <br />
-
-            <button onclick="respostaBhask()">Calcular</button>
-            <button onclick="limparBhask()">Limpar</button>
+            <div id="diplay_painel">
+              x = -
+              <div id="itemBbhask">
+                <p id="b">b</p>
+              </div>
+              ± √Δ / 2 .
+              <div id="itemAbhask">
+                <p id="a">a</p>
+              </div>
+            </div>
 
             <div class="painel-resposta-bhaskara">
-
               <div class="display">
                 <p id="texto-bhaskara1">¹x =</p>
                 <div id="res-painel-bhaskara">
@@ -85,6 +82,8 @@
                 </div>
               </div>
 
+              <button onclick="respostaBhask()">Calcular</button>
+              <button onclick="limparPaineis()">Limpar</button>
             </div>
           </div>
         </section>
