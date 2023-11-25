@@ -9,42 +9,86 @@
   </head>
 
   <body>
-<!--Shulalalala-->    
     <main class="main">
       <h1>calculadora de bhaskara</h1>
       <div id="formulas">
         <div id="formDelta">
-            <h2>Delta</h2>
-            <p>Δ = b² – 4.a.c</p>
-          </div>
-          <div id="formBhask">
-            <h2>Bhaskara</h2>
-            <p>x = -b ± √Δ</p>
-          </div>
-      </div>
-
-      
-      <!--inputs-->
-      <div class="painel-main">
-        Δ =
-        <input type="number" id="itemB" />
-        ² - 4.
-        <input type="number" id="itemA" /> .
-        <input type="number" id="itemC" />
-        <br>
-        <br>
-        <button onclick= "resposta()">Calcular</button>
-        <button onclick= "limpar()">Limpar</button>
-
-        <div id="res-painel-main">
-          <p id="res">Resultado</p>
+          <h2>Delta</h2>
+          <p>Δ = b² – 4.a.c</p>
         </div>
-
+        <div id="formBhask">
+          <h2>Bhaskara</h2>
+          <p>x = -b ± √Δ / 2.a</p>
+        </div>
       </div>
+
+      <!--inputs-->
+      <article class="paineis">
+        <section class="painel-delta">
+          <legend class="painel-delta-titulo">
+            <b><p>Discriminante</p></b>
+          </legend>
+          <!--Painel delta-->
+          <div class="painel-delta-box">
+            Δ =
+            <input type="number" id="itemB" />
+            ² - 4.
+            <input type="number" id="itemA" /> .
+            <input type="number" id="itemC" />
+
+            <br />
+            <br />
+
+            <button onclick="respostaDelta()">Calcular</button>
+            <button onclick="limparDelta()">Limpar</button>
+
+            <div class="painel-resposta">
+              <p id="texto-delta">O delta é =</p>
+              <div id="res-painel-delta">
+                <p id="resDelta">Resultado</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="painel-bhaskara">
+          <legend class="painel-bhaskara-titulo">
+            <b><p>Bhaskara</p></b>
+          </legend>
+
+          <!--Painel bhaskara-->
+          <div class="painel-bhaskara-box">
+            x = -
+            <input type="number" id="itemB-bhask" />
+            ± √Δ / 2 .
+            <input type="number" id="itemA-bhask" />
+
+            <br />
+            <br />
+
+            <button onclick="respostaBhask()">Calcular</button>
+            <button onclick="limparBhask()">Limpar</button>
+
+            <div class="painel-resposta-bhaskara">
+
+              <div class="display">
+                <p id="texto-bhaskara1">¹x =</p>
+                <div id="res-painel-bhaskara">
+                  <p id="resBhask1">Resultado</p>
+                </div>
+              </div>
+
+              <div class="display">
+                <p id="texto-bhaskara2">²x =</p>
+                <div id="res-painel-bhaskara">
+                  <p id="resBhask2">Resultado</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </article>
     </main>
-    
-    <div id="teste">
-        tatata
-    </div>
   </body>
 </html>
