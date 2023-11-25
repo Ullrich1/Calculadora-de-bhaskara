@@ -1,3 +1,5 @@
-# Calculadora-de-bhaskara
-vai dar certo
-Deve calcular o discriminante e a bhaskara de forma detalhada e simples
+# Projetos manu e andré
+site com vários projetos diferentes ✅❌🛠️<br>
+Calculadora de Bhaskara 🛠️<br>
+Calculadora doidinha ❌<br>
+Calculadora normal ❌<br>
