@@ -12,14 +12,14 @@ function respostaBhask() {
   document.getElementById("b").innerHTML = B;
   document.getElementById("a").innerHTML = A;
 
-  let x1 = -B + (Math.sqrt(delta) / 2) * A; //Calc da Bhaskara +
-  let x2 = -B - (Math.sqrt(delta) / 2) * A; //Calc da Bhaskara -
+  let x1 = (Number(-B) + Number(Math.sqrt(delta))) / 2 * Number(A); //Calc da Bhaskara +
+  let x2 = (Number(-B) - Number(Math.sqrt(delta))) / 2 * Number(A); //Calc da Bhaskara -
 
   document.getElementById("resBhask1").innerHTML = x1; //resultado na janela bhaskara
   document.getElementById("resBhask2").innerHTML = x2; //resultado na janela bhaskara
 
-  resBhask1.innerHTML = x1.toFixed(2); //arrendonda resultados decimais
-  resBhask2.innerHTML = x2.toFixed(2); //arrendonda resultados decimais
+  resBhask1.innerHTML = x1.toFixed(1); //arrendonda resultados decimais
+  resBhask2.innerHTML = x2.toFixed(1); //arrendonda resultados decimais
 }
 
 function limparPaineis() {
