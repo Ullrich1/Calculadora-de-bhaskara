@@ -1,5 +1,14 @@
 .main__4digitCalc {
-    width: 100px;
-    height: 100px;
-    background-color: lightskyblue;
+    width: 300px;
+    height: 400px;
+    background-color: gray;
+    margin: auto;
+}
+#visor__4digitCalc {
+    width: fit-content;
+    background-color: lightblue;
+    margin: auto;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
 }
