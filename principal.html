@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Randoid</title>
-    <link rel="stylesheet" href="./Styles/CalcBhask.css" >
-    <link rel="stylesheet" href="./Styles/4digitCalc.css" >
-    <link rel="stylesheet" href="./Styles/Style.scss" >
+    <link rel="stylesheet" href="./Styles/CalcBhask.css" />
+    <link rel="stylesheet" href="./Styles/4digitCalc.css" />
+    <link rel="stylesheet" href="./Styles/Style.scss" />
     <script src="./Scripts/CalcBhask.js"></script>
     <script src="./Scripts/carousel.js"></script>
   </head>
   <body>
-
     <main class="main__Calculadora__Bhaskara">
       <h1>calculadora de bhaskara</h1>
       <div id="formulas">
@@ -34,10 +33,10 @@
           <!--Painel delta-->
           <div class="painel-delta-box">
             Δ =
-            <input type="number" id="itemB" placeholder="b"/>
+            <input type="number" id="itemB" placeholder="b" />
             ² - 4.
-            <input type="number" id="itemA" placeholder="a"/> .
-            <input type="number" id="itemC" placeholder="c"/>
+            <input type="number" id="itemA" placeholder="a" /> .
+            <input type="number" id="itemC" placeholder="c" />
 
             <br />
             <br />
@@ -90,25 +89,35 @@
           </div>
         </section>
       </article>
-    
     </main>
-    <hr>
+    <hr />
     <main class="main__4digitCalc">
       <div id="visor__4digitCalc">
         <p id="texto-visor">Math :)</p>
       </div>
+      
       <section class="painel__4digitCalc">
-        <button class="buttons" id="x">x</button>
-        <button class="buttons" id="/">÷</button>
-        <button class="buttons" id="bkspc">⌫</button>
-        <button class="buttons" id="1">1</button>
-        <button class="buttons" id="3">3</button>
-        <button class="buttons" id="minus">-</button>
-        <button class="buttons" id="5">5</button>
-        <button class="buttons" id="7">7</button>
-        <button class="buttons" id="plus">+</button>
+
+        <div id="col1">
+          <button class="buttons" id="x">x</button>
+          <button class="buttons" id="/">÷</button>
+          <button class="buttons" id="bkspc">⌫</button> <br />
+        </div>
+
+        <div id="col2">
+          <button class="buttons" id="1">1</button>
+          <button class="buttons" id="3">3</button>
+          <button class="buttons" id="minus">-</button> <br />
+        </div>
+
+        <div id="col3">
+          <button class="buttons" id="5">5</button>
+          <button class="buttons" id="7">7</button>
+          <button class="buttons" id="plus">+</button> <br />
+        </div>
+
         <button class="buttons" id="equals">=</button>
       </section>
-    </main>  
+    </main>
   </body>
 </html>
