@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="./Styles/4digitCalc.css" >
     <link rel="stylesheet" href="./Styles/Style.css" >
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-   
+
+   <script>
+
+    
+
+   </script>
+
   </head>
   <body>
 
@@ -106,85 +112,86 @@
     </div>
 </div>
 
-    <main class="main__Calculadora__Bhaskara">
-      <h1>calculadora de bhaskara</h1>
-      <div id="formulas">
-        <div id="formDelta">
-          <h2>Delta</h2>
-          <p>Δ = b² – 4.a.c</p>
-        </div>
-        <div id="formBhask">
-          <h2>Bhaskara</h2>
-          <p>x = -b ± √Δ / 2.a</p>
+<main class="main__Calculadora__Bhaskara">
+  <h1>calculadora de bhaskara</h1>
+  <div id="formulas">
+    <div id="formDelta">
+      <h2>Delta</h2>
+      <p>Δ = b² – 4.a.c</p>
+    </div>
+    <div id="formBhask">
+      <h2>Bhaskara</h2>
+      <p>x = -b ± √Δ / 2.a</p>
+    </div>
+  </div>
+
+  <!--inputs-->
+  <article class="paineis">
+    <section class="painel-delta">
+      <legend class="painel-delta-titulo">
+        <b><p>Discriminante</p></b>
+      </legend>
+      <!--Painel delta-->
+      <div class="painel-delta-box">
+        Δ =
+        <input type="number" id="itemB" placeholder="b" />
+        ² - 4.
+        <input type="number" id="itemA" placeholder="a" /> .
+        <input type="number" id="itemC" placeholder="c" />
+
+        <br />
+        <br />
+
+        <div class="painel-resposta">
+          <p id="texto-delta">Δ =</p>
+          <div id="res-painel-delta">
+            <p id="resDelta">delta</p>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!--inputs-->
-      <article class="paineis">
-        <section class="painel-delta">
-          <legend class="painel-delta-titulo">
-            <b><p>Discriminante</p></b>
-          </legend>
-          <!--Painel delta-->
-          <div class="painel-delta-box">
-            Δ =
-            <input type="number" id="itemB" placeholder="b" />
-            ² - 4.
-            <input type="number" id="itemA" placeholder="a" /> .
-            <input type="number" id="itemC" placeholder="c" />
+    <section class="painel-bhaskara">
+      <legend class="painel-bhaskara-titulo">
+        <b><p>Bhaskara</p></b>
+      </legend>
 
-            <br />
-            <br />
+      <!--Painel bhaskara-->
+      <div class="painel-bhaskara-box">
+        <div id="diplay_painel">
+          x = (-
+          <div id="itemBbhask">
+            <p id="b">b</p>
+          </div>
+          ± √Δ) / 2 .
+          <div id="itemAbhask">
+            <p id="a">a</p>
+          </div>
+        </div>
 
-            <div class="painel-resposta">
-              <p id="texto-delta">Δ =</p>
-              <div id="res-painel-delta">
-                <p id="resDelta">delta</p>
-              </div>
+        <div class="painel-resposta-bhaskara">
+          <div class="display">
+            <p id="texto-bhaskara1">¹x =</p>
+            <div id="res-painel-bhaskara">
+              <p id="resBhask1">resultado</p>
             </div>
           </div>
-        </section>
 
-        <section class="painel-bhaskara">
-          <legend class="painel-bhaskara-titulo">
-            <b><p>Bhaskara</p></b>
-          </legend>
-
-          <!--Painel bhaskara-->
-          <div class="painel-bhaskara-box">
-            <div id="diplay_painel">
-              x = (-
-              <div id="itemBbhask">
-                <p id="b">b</p>
-              </div>
-              ± √Δ) / 2 .
-              <div id="itemAbhask">
-                <p id="a">a</p>
-              </div>
-            </div>
-
-            <div class="painel-resposta-bhaskara">
-              <div class="display">
-                <p id="texto-bhaskara1">¹x =</p>
-                <div id="res-painel-bhaskara">
-                  <p id="resBhask1">resultado</p>
-                </div>
-              </div>
-
-              <div class="display">
-                <p id="texto-bhaskara2">²x =</p>
-                <div id="res-painel-bhaskara">
-                  <p id="resBhask2">resultado</p>
-                </div>
-              </div>
-
-              <button onclick="respostaBhask()">Calcular</button>
-              <button onclick="limparPaineis()">Limpar</button>
+          <div class="display">
+            <p id="texto-bhaskara2">²x =</p>
+            <div id="res-painel-bhaskara">
+              <p id="resBhask2">resultado</p>
             </div>
           </div>
-        </section>
-      </article>
-    </main>
+
+          <button onclick="respostaBhask()">Calcular</button>
+          <button onclick="limparPaineis()">Limpar</button>
+        </div>
+      </div>
+    </section>
+  </article>
+</main>
+
     <hr />
     <main class="main__4digitCalc">
       <div id="visor__4digitCalc">
@@ -216,6 +223,7 @@
     </main>  
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./Scripts/jquery-3.7.1.js"></script>
     <script src="./Scripts/CalcBhask.js"></script>
     <script src="./Scripts/carousel.js"></script>
   </body>
