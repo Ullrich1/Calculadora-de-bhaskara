@@ -9,12 +9,6 @@
     <link rel="stylesheet" href="./Styles/Style.css" >
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
-   <script>
-
-    
-
-   </script>
-
   </head>
   <body>
 
@@ -22,76 +16,161 @@
     <div class="swiper-container">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="card">
-              <div class="card-details">
+
+
+          <div class="swiper-slide" id="s1">
+            <div class="card" id="card1">
+              <div class="card-details" id="card-details1">
                 <p class="text-title">Bhaskara</p>
-                <p class="text-body">Este programa calcula a formuça de baskhara. </p>
+                <p class="text-body">Este programa calcula a fórmula de bhaskara. </p>
               </div>
-              <button class="card-button">Acesse!</button>
+
+              <main id="main__Calculadora__Bhaskara">
+                <h1>calculadora de bhaskara</h1>
+                <div id="formulas">
+                  <div id="formDelta">
+                    <h2>Delta</h2>
+                    <p>Δ = b² – 4.a.c</p>
+                  </div>
+                  <div id="formBhask">
+                    <h2>Bhaskara</h2>
+                    <p>x = -b ± √Δ / 2.a</p>
+                  </div>
+                </div>
+              
+                <!--inputs-->
+                <article class="paineis">
+                  <section class="painel-delta">
+                    <legend class="painel-delta-titulo">
+                      <b><p>Discriminante</p></b>
+                    </legend>
+                    <!--Painel delta-->
+                    <div class="painel-delta-box">
+                      Δ =
+                      <input type="number" id="itemB" placeholder="b" />
+                      ² - 4.
+                      <input type="number" id="itemA" placeholder="a" /> .
+                      <input type="number" id="itemC" placeholder="c" />
+              
+                      <br />
+                      <br />
+              
+                      <div class="painel-resposta">
+                        <p id="texto-delta">Δ =</p>
+                        <div id="res-painel-delta">
+                          <p id="resDelta">delta</p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+              
+                  <section class="painel-bhaskara">
+                    <legend class="painel-bhaskara-titulo">
+                      <b><p>Bhaskara</p></b>
+                    </legend>
+              
+                    <!--Painel bhaskara-->
+                    <div class="painel-bhaskara-box">
+                      <div id="diplay_painel">
+                        x = (-
+                        <div id="itemBbhask">
+                          <p id="b">b</p>
+                        </div>
+                        ± √Δ) / 2 .
+                        <div id="itemAbhask">
+                          <p id="a">a</p>
+                        </div>
+                      </div>
+              
+                      <div class="painel-resposta-bhaskara">
+                        <div class="display">
+                          <p id="texto-bhaskara1">¹x =</p>
+                          <div id="res-painel-bhaskara">
+                            <p id="resBhask1">resultado</p>
+                          </div>
+                        </div>
+              
+                        <div class="display">
+                          <p id="texto-bhaskara2">²x =</p>
+                          <div id="res-painel-bhaskara">
+                            <p id="resBhask2">resultado</p>
+                          </div>
+                        </div>
+              
+                        <button onclick="respostaBhask()">Calcular</button>
+                        <button onclick="limparPaineis()">Limpar</button>
+                      </div>
+                    </div>
+                  </section>
+                </article>
+              </main>
+
+              <button class="card-button" id="card1button">Acessar</button>
             </div>
           </div>
-          <div class="swiper-slide">
+
+
+          <div class="swiper-slide" id="s2">
             <div class="card">
               <div class="card-details">
                 <p class="text-title">Bhaskara</p>
-                <p class="text-body">Este programa calcula a formuça de baskhara. </p>
+                <p class="text-body">Calculadora de números ímpares </p>
               </div>
-              <button class="card-button">Acesse!</button>
+              <button class="card-button" id="card2button">Acesse!</button>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" id="s3">
             <div class="card">
               <div class="card-details">
                 <p class="text-title">Bhaskara</p>
                 <p class="text-body">Este programa calcula a formuça de baskhara. </p>
               </div>
-              <button class="card-button">Acesse!</button>
+              <button class="card-button" id="card3button">Acesse!</button>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" id="s4">
             <div class="card">
               <div class="card-details">
                 <p class="text-title">Bhaskara</p>
                 <p class="text-body">Este programa calcula a formuça de baskhara. </p>
               </div>
-              <button class="card-button">Acesse!</button>
+              <button class="card-button" id="card4button">Acesse!</button>
             </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" id="s5">
               <div class="card">
                 <div class="card-details">
                   <p class="text-title">Bhaskara</p>
                   <p class="text-body">Este programa calcula a formuça de baskhara. </p>
                 </div>
-                <button class="card-button">Acesse!</button>
+                <button class="card-button" id="card5">Acesse!</button>
               </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide" id="s6">
                 <div class="card">
                   <div class="card-details">
                     <p class="text-title">Bhaskara</p>
                     <p class="text-body">Este programa calcula a formuça de baskhara. </p>
                   </div>
-                  <button class="card-button">Acesse!</button>
+                  <button class="card-button" id="card6button">Acesse!</button>
                 </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" id="s7">
                   <div class="card">
                     <div class="card-details">
                       <p class="text-title">Bhaskara</p>
                       <p class="text-body">Este programa calcula a formuça de baskhara. </p>
                     </div>
-                    <button class="card-button">Acesse!</button>
+                    <button class="card-button" id="card7button">Acesse!</button>
                   </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide" id="s8">
                     <div class="card">
                       <div class="card-details">
                         <p class="text-title">Bhaskara</p>
                         <p class="text-body">Este programa calcula a formuça de baskhara. </p>
                       </div>
-                      <button class="card-button">Acesse!</button>
+                      <button class="card-button" id="card8button">Acesse!</button>
                     </div>
                     </div>
           </div>
@@ -112,86 +191,9 @@
     </div>
 </div>
 
-<main class="main__Calculadora__Bhaskara">
-  <h1>calculadora de bhaskara</h1>
-  <div id="formulas">
-    <div id="formDelta">
-      <h2>Delta</h2>
-      <p>Δ = b² – 4.a.c</p>
-    </div>
-    <div id="formBhask">
-      <h2>Bhaskara</h2>
-      <p>x = -b ± √Δ / 2.a</p>
-    </div>
-  </div>
 
-  <!--inputs-->
-  <article class="paineis">
-    <section class="painel-delta">
-      <legend class="painel-delta-titulo">
-        <b><p>Discriminante</p></b>
-      </legend>
-      <!--Painel delta-->
-      <div class="painel-delta-box">
-        Δ =
-        <input type="number" id="itemB" placeholder="b" />
-        ² - 4.
-        <input type="number" id="itemA" placeholder="a" /> .
-        <input type="number" id="itemC" placeholder="c" />
-
-        <br />
-        <br />
-
-        <div class="painel-resposta">
-          <p id="texto-delta">Δ =</p>
-          <div id="res-painel-delta">
-            <p id="resDelta">delta</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="painel-bhaskara">
-      <legend class="painel-bhaskara-titulo">
-        <b><p>Bhaskara</p></b>
-      </legend>
-
-      <!--Painel bhaskara-->
-      <div class="painel-bhaskara-box">
-        <div id="diplay_painel">
-          x = (-
-          <div id="itemBbhask">
-            <p id="b">b</p>
-          </div>
-          ± √Δ) / 2 .
-          <div id="itemAbhask">
-            <p id="a">a</p>
-          </div>
-        </div>
-
-        <div class="painel-resposta-bhaskara">
-          <div class="display">
-            <p id="texto-bhaskara1">¹x =</p>
-            <div id="res-painel-bhaskara">
-              <p id="resBhask1">resultado</p>
-            </div>
-          </div>
-
-          <div class="display">
-            <p id="texto-bhaskara2">²x =</p>
-            <div id="res-painel-bhaskara">
-              <p id="resBhask2">resultado</p>
-            </div>
-          </div>
-
-          <button onclick="respostaBhask()">Calcular</button>
-          <button onclick="limparPaineis()">Limpar</button>
-        </div>
-      </div>
-    </section>
-  </article>
-</main>
-
+<br>
+<br><br><br><br><br><br><br>
     <hr />
     <main class="main__4digitCalc">
       <div id="visor__4digitCalc">
@@ -226,5 +228,26 @@
     <script src="./Scripts/jquery-3.7.1.js"></script>
     <script src="./Scripts/CalcBhask.js"></script>
     <script src="./Scripts/carousel.js"></script>
+    <script>
+
+      $(document).ready(function ()
+        {
+          $("#card1button").click(function () 
+          {
+            $("#main__Calculadora__Bhaskara").slideToggle(50);
+            $("#card-details1").slideToggle(5)
+            $("#s2,#s3,#s4,#s5,#s6,#s7,#s8").toggle()
+            
+            // $( "#card1button" ).toggle(function() {
+            //   $("#card1button").text("Fechar")
+            // }, function() {                          //função para mudar o texto do botão quando clicado (em progresso)
+            //   "#card1button".text("Acessar")
+            // });
+            
+          });
+        });
+
+        
+       </script>
   </body>
 </html>

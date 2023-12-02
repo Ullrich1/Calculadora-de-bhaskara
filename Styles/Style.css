@@ -77,12 +77,19 @@
     overflow: visible;
    }
    
+/*~cards InDividuais*/
+
+#card1 {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  margin: auto;
+  justify-content: center;
+}
+
    .card-details {
     color: black;
     height: 100%;
-    gap: .5em;
-    display: grid;
-    place-content: center;
    }
    
    .card-button {
@@ -94,7 +101,7 @@
     color: #fff;
     font-size: 1rem;
     padding: .5rem 1rem;
-    position: absolute;
+    position: relative;
     left: 50%;
     bottom: 0;
     opacity: 0;
