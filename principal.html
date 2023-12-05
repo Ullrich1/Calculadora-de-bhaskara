@@ -14,7 +14,7 @@
 
   <div class="carousel">
     <div class="swiper-container">
-      <div class="swiper mySwiper">
+      <div class="swiper mySwiper" id="swiperMS">
         <div class="swiper-wrapper">
 
 
@@ -234,10 +234,17 @@
         {
           $("#card1button").click(function () 
           {
-            $("#main__Calculadora__Bhaskara").slideToggle(50);
+            $("#main__Calculadora__Bhaskara").slideToggle(50)
             $("#card-details1").slideToggle(5)
-            $("#s2,#s3,#s4,#s5,#s6,#s7,#s8").toggle()
+            $("#s2,#s3,#s4,#s5,#s6,#s7,#s8").toggle();
             
+            document.getElementById("#card1").style.left = "100%";
+            document.getElementById("#card1").style.right = "100%";     //ta eu não saquei, tenho que fazer com que minha div vá para o meio da pagina
+            
+
+            document.getElementById("#card1button").innerHTML = Date();
+            document.getElementById("#card1button").id = "card1buttonEMUSO";
+
             // $( "#card1button" ).toggle(function() {
             //   $("#card1button").text("Fechar")
             // }, function() {                          //função para mudar o texto do botão quando clicado (em progresso)
@@ -245,6 +252,11 @@
             // });
             
           });
+            $("#").click(function(){
+              document.getElementById("#card1").style.left = "0px";
+              document.getElementById("#card1").style.right = "0px";
+            });
+
         });
 
         

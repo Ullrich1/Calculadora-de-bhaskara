@@ -22,6 +22,12 @@
   cursor: grab;
 }
 
+var
+.swiper-container {
+  position: relative;
+  left: 500px;
+}
+
 .swiper-slide {
   display: flex;
   justify-content: center;
